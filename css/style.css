@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+:root{
+       --text-color: #f1faee;
+       --bg-color: #1d3557;
+       --color-secundario: #457b9d;
+       --color-terciario: #a8dadc;
+       --color-cuaternario: #e63946;
+}
+
+
+body{
+    background-color: var(--bg-color);
+}
+
+/* CAJAS */ 
+
+#contenedor{
+      background-color: var(--color-terciario);
+      width: 50%;
+      margin: 1rem auto;
+      height: fit-content;
+      border: 2px solid var(--color-cuaternario);
+}
+
+.subContenedor{
+       width: 70%;
+       border: 2px solid green;
+       margin: 0.5rem auto;
+       padding: 1rem;
+}
+
+.subContenedor__opciones{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: 1rem auto;
+      border: 2px solid blue;   
+}
+
+.subContenedor__opcion{
+    margin: 1rem;
+    line-height: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--color-cuaternario);
+    color: var(--text-color);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ELEMENTOS */
+
+#subContenedor__titulo{
+       text-align: center;
+       color: var(--text-color);
+       font-family: 'Noto Sans JP', sans-serif;
+      
+}
+
+#subContenedor__pregunta{
+     text-align: center;
+     color: var(--text-color);
+     font-family: 'Noto Sans JP', sans-serif;
+}
+
+#subContenedor__descripcion{
+    text-align: justify;
+    color: var(--text-color);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* BARRA DE PROGRESO */
+
+#barra{
+     width: 80%;
+     margin: 0.2rem auto;
+     display: block;
+
+     appearance: none;
+     -webkit-appearance: none;
+}
+
+#barra::-webkit-progress-bar{
+     background-color: gold;
+}
+
+#barra::-webkit-progress-value{
+    background-color: darkred;
+}
